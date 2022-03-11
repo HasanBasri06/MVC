@@ -1,0 +1,5 @@
+DirectoryIndex public/index.php?page=/
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !testing.php
+RewriteRule page/(.*) public/index.php?page=$1
